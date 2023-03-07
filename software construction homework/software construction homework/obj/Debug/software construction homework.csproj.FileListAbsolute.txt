@@ -1,0 +1,8 @@
+D:\visualStudio workspace\software construction homework\software construction homework\obj\Debug\software construction homework.csproj.AssemblyReference.cache
+D:\visualStudio workspace\software construction homework\software construction homework\obj\Debug\software construction homework.csproj.SuggestedBindingRedirects.cache
+D:\visualStudio workspace\software construction homework\software construction homework\obj\Debug\software construction homework.csproj.CoreCompileInputs.cache
+D:\visualStudio workspace\software construction homework\software construction homework\bin\Debug\software construction homework.exe.config
+D:\visualStudio workspace\software construction homework\software construction homework\bin\Debug\software construction homework.exe
+D:\visualStudio workspace\software construction homework\software construction homework\bin\Debug\software construction homework.pdb
+D:\visualStudio workspace\software construction homework\software construction homework\obj\Debug\software construction homework.exe
+D:\visualStudio workspace\software construction homework\software construction homework\obj\Debug\software construction homework.pdb
