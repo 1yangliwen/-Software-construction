@@ -1,8 +1,0 @@
-D:\GitHub\-Software-construction\software construction homework\homework2\array\bin\Debug\array.exe.config
-D:\GitHub\-Software-construction\software construction homework\homework2\array\bin\Debug\array.exe
-D:\GitHub\-Software-construction\software construction homework\homework2\array\bin\Debug\array.pdb
-D:\GitHub\-Software-construction\software construction homework\homework2\array\obj\Debug\array.csproj.AssemblyReference.cache
-D:\GitHub\-Software-construction\software construction homework\homework2\array\obj\Debug\array.csproj.SuggestedBindingRedirects.cache
-D:\GitHub\-Software-construction\software construction homework\homework2\array\obj\Debug\array.csproj.CoreCompileInputs.cache
-D:\GitHub\-Software-construction\software construction homework\homework2\array\obj\Debug\array.exe
-D:\GitHub\-Software-construction\software construction homework\homework2\array\obj\Debug\array.pdb
