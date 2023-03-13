@@ -1,0 +1,8 @@
+D:\GitHub\-Software-construction\software construction homework\homework3\bin\Debug\homework3.exe.config
+D:\GitHub\-Software-construction\software construction homework\homework3\bin\Debug\homework3.exe
+D:\GitHub\-Software-construction\software construction homework\homework3\bin\Debug\homework3.pdb
+D:\GitHub\-Software-construction\software construction homework\homework3\obj\Debug\homework3.csproj.AssemblyReference.cache
+D:\GitHub\-Software-construction\software construction homework\homework3\obj\Debug\homework3.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\-Software-construction\software construction homework\homework3\obj\Debug\homework3.csproj.CoreCompileInputs.cache
+D:\GitHub\-Software-construction\software construction homework\homework3\obj\Debug\homework3.exe
+D:\GitHub\-Software-construction\software construction homework\homework3\obj\Debug\homework3.pdb
