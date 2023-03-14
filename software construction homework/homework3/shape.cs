@@ -16,7 +16,7 @@ namespace homework3
         public abstract bool legal();
     }
     public interface Compute {
-        double areaCompute();
+        double AreaCompute();
     }
     class Square : Rectangle, Compute
     {
@@ -29,9 +29,9 @@ namespace homework3
             if (edge1 > 0) return true;
             return false;
         }
-        double Compute.areaCompute()
+        double Compute.AreaCompute()
         {   
-            if (!legal()) return -1;
+            if (!legal()) return -1;   // 抛出异常而不是一个负值
             area = edge1*edge1; return area;
         }
     }
@@ -47,7 +47,7 @@ namespace homework3
             if (edge1 > 0 && edge3 > 0) return true;
             return false;
         }
-        double Compute.areaCompute()
+        double Compute.AreaCompute()
         {
             if (!legal())
             {
@@ -63,7 +63,7 @@ namespace homework3
         {
             edge1 = l1; edge2 = l2; edge3 = l3;
         }
-        double Compute.areaCompute()
+        double Compute.AreaCompute()
         {   
             if (!legal()) return -1;
             double s = (edge1 + edge2 + edge3) / 2;
@@ -132,7 +132,7 @@ namespace homework3
         for (int i = 0; i < 10; i++)
         {
             Compute s = ShapeFactory.CreateRandomShanpe();
-            areaSum += s.areaCompute();
+            areaSum += s.AreaCompute();
         }
 
         System.Console.WriteLine("以下为10个形状面积之和");
