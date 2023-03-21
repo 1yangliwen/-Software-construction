@@ -23,8 +23,8 @@ namespace clock
     public class Clock
     {   
         Time time = new Time(0, 0, 0);
-        public event ClockHandler  TimePass;
-        public void ClockRun() { 
+        public event ClockHandler  TimePass;    //事件也是一个对象，需要赋初值    避免空指针的情况
+        public void ClockRun() {                // TIMEPASS += c => {}   给一个空函数
             for (; time.hour < 24; time.hour++)
             {
                 for (time.minute = 0; time.minute < 60; time.minute = time.minute + 30)
