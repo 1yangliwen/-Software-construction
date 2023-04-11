@@ -14,6 +14,7 @@ namespace homework5
         public string Client { get; set; }
         //public string ProductName { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
+        //一般构造函数需要两个-1个无参1个含参
         public Order(string orderId, string cilent)
         {
             OrderId = orderId;
@@ -21,7 +22,7 @@ namespace homework5
             Client = cilent;
             OrderDetails = new List<OrderDetail>();
         }
-
+        //如果是冗余字段需要随时根据变化更新数据-即保证一致性-冗余字段是为了减少计算量
         public double TotalMoney {
             get => OrderDetails.Sum(d => d.ProductPrice * d.ProductQuantity);
         }
@@ -88,6 +89,10 @@ namespace homework5
     {
         public OrderService() { }
         //public List<Order> Orders { get; set; }
+        /// <summary>
+        /// 集合最好做初始化不要直接为null
+        /// </summary>
+        /// 应当设计为private类型
         public List<Order> Orders = new List<Order>();  // 就是因为这里你没有声明所以有错误 CS0117 “Order”未包含“ForEach”的定义 这样的报错       
         // 不要在order里面写add方法，这属于是业务逻辑而order只是一个数据结构
         // addDetail 太细了？ 数据库里修改一般是创建一个新的对象再把原来的覆盖掉
@@ -96,8 +101,9 @@ namespace homework5
             if (order.OrderId == null) return;
             //先排序？还是先比较再插入，插入之后再排序?
             bool tag = false;
+            //还可以使用findindex 然后对index判断是不是有
             Orders.ForEach(o => {
-                if (order.OrderId == order.OrderId) tag = true;
+                if (o.OrderId == order.OrderId) tag = true;
                 }
             );
             if (!tag)
@@ -105,7 +111,8 @@ namespace homework5
                 Orders.Add(order);
             }
             else
-            {
+            {   
+                //最好定义自己的异常like orderException
                 throw new ArgumentException($"Order with id {order.OrderId} already exiest.");
             }
         }
@@ -139,6 +146,7 @@ namespace homework5
         public List<Order> QueryOrdersByProductName(string productName)
         {
             var query = Orders.Where(o => o.OrderDetails.Any(d => d.ProductName == productName));
+            //i不用这样排序，直接用orderBy(0 => o.totalmoney)就可以了
             List<Order> ans = query.ToList();
             ans.Sort((o1, o2) => o1.TotalMoney.CompareTo(o2.TotalMoney));
             return ans;
@@ -160,11 +168,17 @@ namespace homework5
 
     }
 
-/*    public class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            OrderService service = new OrderService();
+            OrderService orderService = new OrderService();
+            Order order1 = new Order("001", "Customer1");
+            Order order2 = new Order("002", "Customer2");
+            Order order3 = new Order("003", "Customer3");
+            orderService.AddOrder(order1);
+            orderService.AddOrder(order2);
+            orderService.AddOrder(order3);
         }
-    }*/
+    }
 }

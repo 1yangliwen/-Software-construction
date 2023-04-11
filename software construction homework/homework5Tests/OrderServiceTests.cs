@@ -11,6 +11,13 @@ namespace homework5.Tests
     [TestClass()]
     public class OrderServiceTests
     {
+        OrderService orderService = new OrderService();
+        [TestInitialize] 
+        public void Init() {
+            
+            Order order = new Order("001", "Customer1");
+            orderService.Orders.Add(order);
+        }
         [TestMethod()]
         public void OrderServiceTest()
         {
@@ -18,18 +25,20 @@ namespace homework5.Tests
         }
 
         [TestMethod()]
+        //还可以期望抛出异常
         public void AddOrderTest()
         {
             // Arrange
-            OrderService orderService = new OrderService();
-            Order order = new Order("001", "Customer1");
-
+            Init();
             // Act
-            orderService.AddOrder(order);
-
+            Order order2 = new Order("002", "Customer2");
+            orderService.Orders.Add(order2);
             // Assert
-            Assert.AreEqual(1, orderService.Orders.Count);
-            Assert.AreEqual(order, orderService.Orders[0]);
+            //可以先判断是不是为null
+
+            Assert.AreEqual(2, orderService.Orders.Count);
+            Assert.AreEqual(order2, orderService.Orders[1]);
+            //collectionAssert.contains(orders, order)
         }
 
         [TestMethod()]
@@ -37,14 +46,13 @@ namespace homework5.Tests
         {   
             OrderService orderService = new OrderService();
             Order order1 = new Order("001", "Customer1");
-            Order order2 = new Order("002", "Customer2");
+            Order order2 = new Order("002", "Customer2");   
             Order order3 = new Order("003", "Customer3");
             orderService.AddOrder(order1);
             orderService.AddOrder(order2);
             orderService.AddOrder(order3);
             orderService.RemoveOrder("002");
             Assert.AreEqual(2, orderService.Orders.Count);   
-            Assert.Fail();
         }
 
         [TestMethod()]
