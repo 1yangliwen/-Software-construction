@@ -20,7 +20,9 @@ namespace ManagementUI
 
         public OrderEditor(Order selectedOrder)
         {
-
+            OrderIdBox.Text = selectedOrder.OrderId;
+            ClientBox.Text = selectedOrder.Client;
+            orderDetailBindingSource.DataSource = selectedOrder;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -29,6 +31,17 @@ namespace ManagementUI
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void SaveOrderBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddDetailBtn_Click(object sender, EventArgs e)
         {
 
         }

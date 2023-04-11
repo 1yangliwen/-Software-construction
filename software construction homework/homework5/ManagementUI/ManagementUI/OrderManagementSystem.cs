@@ -26,7 +26,14 @@ namespace ManagementUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            OrderService orderService = new OrderService();
+            Order order1 = new Order("001", "Customer1");
+            Order order2 = new Order("002", "Customer2");
+            Order order3 = new Order("003", "Customer3");
+            orderService.AddOrder(order1);
+            orderService.AddOrder(order2);
+            orderService.AddOrder(order3);
+            OrderGridView.DataSource = orderService;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -75,13 +82,13 @@ namespace ManagementUI
         private void DeleteOrderBtn_Click(object sender, EventArgs e)
         {
             // Get the selected order from the DataGridView
-            Order selectedOrder = (Order)dataGridView1.CurrentRow.DataBoundItem;
+            //Order selectedOrder = (Order)OrderGridView.SelectedRows
 
             // Call the OrderService to delete the selected order
-            OrderService.DeleteOrder(selectedOrder);
+            //OrderService.DeleteOrder(selectedOrder);
 
             // Refresh the DataGridView to reflect the changes
-            orderBindingSource.ResetBindings(false);
+            //orderBindingSource.ResetBindings(false);
         }
     }
     static class Program

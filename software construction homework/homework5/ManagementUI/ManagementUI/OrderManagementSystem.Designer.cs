@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderManagementSystem));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.OrderServicetlp = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -109,12 +109,12 @@
             this.OrderServicetlp.Controls.Add(this.flowLayoutPanel2, 0, 0);
             this.OrderServicetlp.Dock = System.Windows.Forms.DockStyle.Top;
             this.OrderServicetlp.Location = new System.Drawing.Point(0, 0);
-            this.OrderServicetlp.Margin = new System.Windows.Forms.Padding(2);
+            this.OrderServicetlp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrderServicetlp.Name = "OrderServicetlp";
             this.OrderServicetlp.RowCount = 2;
             this.OrderServicetlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.OrderServicetlp.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.OrderServicetlp.Size = new System.Drawing.Size(902, 108);
+            this.OrderServicetlp.Size = new System.Drawing.Size(1579, 216);
             this.OrderServicetlp.TabIndex = 0;
             this.OrderServicetlp.Paint += new System.Windows.Forms.PaintEventHandler(this.OrderServicetlp_Paint);
             // 
@@ -127,21 +127,21 @@
             this.flowLayoutPanel1.Controls.Add(this.Searchtb);
             this.flowLayoutPanel1.Controls.Add(this.Sortbtn);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 57);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 113);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(25, 12, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(894, 47);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50, 24, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1567, 97);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(25, 14);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 2, 10, 2);
+            this.textBox1.Location = new System.Drawing.Point(50, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 4, 20, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 16);
+            this.textBox1.Size = new System.Drawing.Size(124, 32);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "排序方式";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -152,10 +152,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(102, 17);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.radioButton1.Location = new System.Drawing.Point(204, 34);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 18);
+            this.radioButton1.Size = new System.Drawing.Size(113, 36);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "订单号";
@@ -165,10 +165,10 @@
             // 
             this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(171, 17);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(5);
+            this.radioButton2.Location = new System.Drawing.Point(337, 34);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 18);
+            this.radioButton2.Size = new System.Drawing.Size(113, 36);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.Text = "用户名";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -178,10 +178,10 @@
             this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(240, 17);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(5);
+            this.radioButton3.Location = new System.Drawing.Point(470, 34);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 18);
+            this.radioButton3.Size = new System.Drawing.Size(113, 36);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.Text = "总金额";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -189,19 +189,19 @@
             // Searchtb
             // 
             this.Searchtb.AcceptsReturn = true;
-            this.Searchtb.Location = new System.Drawing.Point(309, 14);
-            this.Searchtb.Margin = new System.Windows.Forms.Padding(5, 2, 15, 2);
+            this.Searchtb.Location = new System.Drawing.Point(603, 28);
+            this.Searchtb.Margin = new System.Windows.Forms.Padding(10, 4, 30, 4);
             this.Searchtb.Name = "Searchtb";
-            this.Searchtb.Size = new System.Drawing.Size(311, 21);
+            this.Searchtb.Size = new System.Drawing.Size(618, 35);
             this.Searchtb.TabIndex = 5;
             this.Searchtb.UseWaitCursor = true;
             // 
             // Sortbtn
             // 
-            this.Sortbtn.Location = new System.Drawing.Point(637, 14);
-            this.Sortbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.Sortbtn.Location = new System.Drawing.Point(1255, 28);
+            this.Sortbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Sortbtn.Name = "Sortbtn";
-            this.Sortbtn.Size = new System.Drawing.Size(70, 24);
+            this.Sortbtn.Size = new System.Drawing.Size(140, 48);
             this.Sortbtn.TabIndex = 4;
             this.Sortbtn.Text = "查询";
             this.Sortbtn.UseVisualStyleBackColor = true;
@@ -213,18 +213,19 @@
             this.flowLayoutPanel2.Controls.Add(this.DeleteOrderBtn);
             this.flowLayoutPanel2.Controls.Add(this.button5);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(5, 5);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(8, 8);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(892, 45);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1563, 93);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // NewOrderBtn
             // 
             this.NewOrderBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.NewOrderBtn.Location = new System.Drawing.Point(10, 10);
-            this.NewOrderBtn.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.NewOrderBtn.Location = new System.Drawing.Point(20, 20);
+            this.NewOrderBtn.Margin = new System.Windows.Forms.Padding(20, 20, 6, 6);
             this.NewOrderBtn.Name = "NewOrderBtn";
-            this.NewOrderBtn.Size = new System.Drawing.Size(80, 25);
+            this.NewOrderBtn.Size = new System.Drawing.Size(160, 50);
             this.NewOrderBtn.TabIndex = 0;
             this.NewOrderBtn.Text = "创建订单";
             this.NewOrderBtn.UseVisualStyleBackColor = true;
@@ -233,10 +234,10 @@
             // ModifyOrderBtn
             // 
             this.ModifyOrderBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ModifyOrderBtn.Location = new System.Drawing.Point(103, 10);
-            this.ModifyOrderBtn.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.ModifyOrderBtn.Location = new System.Drawing.Point(206, 20);
+            this.ModifyOrderBtn.Margin = new System.Windows.Forms.Padding(20, 20, 6, 6);
             this.ModifyOrderBtn.Name = "ModifyOrderBtn";
-            this.ModifyOrderBtn.Size = new System.Drawing.Size(80, 25);
+            this.ModifyOrderBtn.Size = new System.Drawing.Size(160, 50);
             this.ModifyOrderBtn.TabIndex = 1;
             this.ModifyOrderBtn.Text = "修改订单";
             this.ModifyOrderBtn.UseVisualStyleBackColor = true;
@@ -245,10 +246,10 @@
             // DeleteOrderBtn
             // 
             this.DeleteOrderBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.DeleteOrderBtn.Location = new System.Drawing.Point(196, 10);
-            this.DeleteOrderBtn.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.DeleteOrderBtn.Location = new System.Drawing.Point(392, 20);
+            this.DeleteOrderBtn.Margin = new System.Windows.Forms.Padding(20, 20, 6, 6);
             this.DeleteOrderBtn.Name = "DeleteOrderBtn";
-            this.DeleteOrderBtn.Size = new System.Drawing.Size(80, 25);
+            this.DeleteOrderBtn.Size = new System.Drawing.Size(160, 50);
             this.DeleteOrderBtn.TabIndex = 2;
             this.DeleteOrderBtn.Text = "删除订单";
             this.DeleteOrderBtn.UseVisualStyleBackColor = true;
@@ -257,10 +258,10 @@
             // button5
             // 
             this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.Location = new System.Drawing.Point(289, 10);
-            this.button5.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.button5.Location = new System.Drawing.Point(578, 20);
+            this.button5.Margin = new System.Windows.Forms.Padding(20, 20, 6, 6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 25);
+            this.button5.Size = new System.Drawing.Size(160, 50);
             this.button5.TabIndex = 3;
             this.button5.Text = "导出订单";
             this.button5.UseVisualStyleBackColor = true;
@@ -272,11 +273,11 @@
             this.Ordergrp.Controls.Add(this.OrderGridView);
             this.Ordergrp.Dock = System.Windows.Forms.DockStyle.Left;
             this.Ordergrp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Ordergrp.Location = new System.Drawing.Point(0, 108);
-            this.Ordergrp.Margin = new System.Windows.Forms.Padding(2);
+            this.Ordergrp.Location = new System.Drawing.Point(0, 216);
+            this.Ordergrp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Ordergrp.Name = "Ordergrp";
-            this.Ordergrp.Padding = new System.Windows.Forms.Padding(2);
-            this.Ordergrp.Size = new System.Drawing.Size(420, 504);
+            this.Ordergrp.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ordergrp.Size = new System.Drawing.Size(840, 748);
             this.Ordergrp.TabIndex = 1;
             this.Ordergrp.TabStop = false;
             this.Ordergrp.Text = "订单";
@@ -288,6 +289,7 @@
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -300,14 +302,15 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(2, 477);
+            this.bindingNavigator1.Location = new System.Drawing.Point(4, 702);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(416, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(832, 42);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -317,13 +320,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorAddNewItem.Text = "新添";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(61, 36);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -333,7 +336,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorDeleteItem.Text = "删除";
             // 
             // bindingNavigatorMoveFirstItem
@@ -342,7 +345,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMoveFirstItem.Text = "移到第一条记录";
             // 
             // bindingNavigatorMovePreviousItem
@@ -351,13 +354,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMovePreviousItem.Text = "移到上一条记录";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -365,14 +368,14 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(96, 38);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "当前位置";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -380,7 +383,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMoveNextItem.Text = "移到下一条记录";
             // 
             // bindingNavigatorMoveLastItem
@@ -389,13 +392,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMoveLastItem.Text = "移到最后一条记录";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
             // 
             // OrderGridView
             // 
@@ -408,10 +411,12 @@
             this.totalMoneyDataGridViewTextBoxColumn});
             this.OrderGridView.DataSource = this.orderBindingSource1;
             this.OrderGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OrderGridView.Location = new System.Drawing.Point(2, 21);
+            this.OrderGridView.Location = new System.Drawing.Point(4, 41);
+            this.OrderGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.OrderGridView.Name = "OrderGridView";
+            this.OrderGridView.RowHeadersWidth = 82;
             this.OrderGridView.RowTemplate.Height = 23;
-            this.OrderGridView.Size = new System.Drawing.Size(416, 481);
+            this.OrderGridView.Size = new System.Drawing.Size(832, 703);
             this.OrderGridView.TabIndex = 0;
             this.OrderGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OrderGridView_CellContentClick);
             // 
@@ -419,20 +424,26 @@
             // 
             this.orderIdDataGridViewTextBoxColumn.DataPropertyName = "OrderId";
             this.orderIdDataGridViewTextBoxColumn.HeaderText = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
+            this.orderIdDataGridViewTextBoxColumn.Width = 200;
             // 
             // clientDataGridViewTextBoxColumn
             // 
             this.clientDataGridViewTextBoxColumn.DataPropertyName = "Client";
             this.clientDataGridViewTextBoxColumn.HeaderText = "Client";
+            this.clientDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.clientDataGridViewTextBoxColumn.Name = "clientDataGridViewTextBoxColumn";
+            this.clientDataGridViewTextBoxColumn.Width = 200;
             // 
             // totalMoneyDataGridViewTextBoxColumn
             // 
             this.totalMoneyDataGridViewTextBoxColumn.DataPropertyName = "TotalMoney";
             this.totalMoneyDataGridViewTextBoxColumn.HeaderText = "TotalMoney";
+            this.totalMoneyDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.totalMoneyDataGridViewTextBoxColumn.Name = "totalMoneyDataGridViewTextBoxColumn";
             this.totalMoneyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totalMoneyDataGridViewTextBoxColumn.Width = 200;
             // 
             // orderBindingSource1
             // 
@@ -445,11 +456,11 @@
             this.OrderDetgrp.Controls.Add(this.chart1);
             this.OrderDetgrp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OrderDetgrp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.OrderDetgrp.Location = new System.Drawing.Point(420, 108);
-            this.OrderDetgrp.Margin = new System.Windows.Forms.Padding(2);
+            this.OrderDetgrp.Location = new System.Drawing.Point(840, 216);
+            this.OrderDetgrp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrderDetgrp.Name = "OrderDetgrp";
-            this.OrderDetgrp.Padding = new System.Windows.Forms.Padding(2);
-            this.OrderDetgrp.Size = new System.Drawing.Size(482, 504);
+            this.OrderDetgrp.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrderDetgrp.Size = new System.Drawing.Size(739, 748);
             this.OrderDetgrp.TabIndex = 2;
             this.OrderDetgrp.TabStop = false;
             this.OrderDetgrp.Text = "订单明细";
@@ -466,22 +477,27 @@
             this.productQuantityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.orderDetailsBindingSource2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 41);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(478, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(731, 331);
             this.dataGridView1.TabIndex = 2;
             // 
             // productNameDataGridViewTextBoxColumn
             // 
             this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
             this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.Width = 200;
             // 
             // productPriceDataGridViewTextBoxColumn
             // 
             this.productPriceDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
             this.productPriceDataGridViewTextBoxColumn.HeaderText = "ProductPrice";
+            this.productPriceDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.productPriceDataGridViewTextBoxColumn.Name = "productPriceDataGridViewTextBoxColumn";
             this.productPriceDataGridViewTextBoxColumn.Width = 130;
             // 
@@ -489,6 +505,7 @@
             // 
             this.productQuantityDataGridViewTextBoxColumn.DataPropertyName = "ProductQuantity";
             this.productQuantityDataGridViewTextBoxColumn.HeaderText = "ProductQuantity";
+            this.productQuantityDataGridViewTextBoxColumn.MinimumWidth = 10;
             this.productQuantityDataGridViewTextBoxColumn.Name = "productQuantityDataGridViewTextBoxColumn";
             this.productQuantityDataGridViewTextBoxColumn.Width = 150;
             // 
@@ -501,20 +518,21 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.Bisque;
             this.chart1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.TileFlipX;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.DataSource = this.orderDetailsBindingSource3;
             this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(2, 316);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(4, 372);
+            this.chart1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(478, 186);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(731, 372);
             this.chart1.TabIndex = 1;
             // 
             // orderDetailsBindingSource3
@@ -546,13 +564,13 @@
             // 
             // OrderManagementSystem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 612);
+            this.ClientSize = new System.Drawing.Size(1579, 964);
             this.Controls.Add(this.OrderDetgrp);
             this.Controls.Add(this.Ordergrp);
             this.Controls.Add(this.OrderServicetlp);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OrderManagementSystem";
             this.Text = "订单管理系统";
             this.Load += new System.EventHandler(this.Form1_Load);
